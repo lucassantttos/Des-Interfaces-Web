@@ -1,0 +1,733 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color:rgb(52, 61, 79);
+}
+
+iframe {
+    max-width: 100%;
+    width: 800px;
+    height: 300px;
+    padding: 0px 10px;
+}
+
+
+/*-------------------------------------------------------------Desktop------------------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+
+    #cabecalho {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        height: 100px;
+        padding: 20px;
+        background-color:rgb(31, 16, 79);
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+    }
+
+    #cabecalho nav {
+        align-items: center;
+    }
+
+    #cabecalho img {
+        max-height: 80px;
+        border-radius: 50px;
+    }
+
+    #cabecalho div {
+        display: flex;
+    }
+
+    #menuToggle,
+    #sharedToggle {
+        display: none;
+    }
+
+    .menu-icon,
+    .shared-icon {
+        display: none;
+    }
+
+
+
+
+    #destaques {
+        margin-top: 20px;
+        background-color:  rgb(31, 16, 79);
+        padding: 50px 50px 70px 50px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    #destaques h1 {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    #destaques h2 {
+        color:  rgb(255, 255, 255);
+    }
+
+    .descricaoDestaque p,
+    span {
+        color: white;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+
+
+
+
+    /*-------------- Conteudo Lançamentos --------------------*/
+
+    #lancamentos {
+        margin-top: 10px;
+        background-color: rgb(31, 16, 79);
+        color: white;
+        padding: 20px 50px 20px 50px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .descricao {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .cards_lancamento {
+        border: 0.09px solid rgb(31, 16, 79);
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .cards_lancamento a {
+        margin-bottom: 20px;
+    }
+
+    .cards_lancamento h4 {
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+
+
+    /*---------------- Conteudo Plataformas  -----------------*/
+
+    #plataformas {
+        margin-top: 60px;
+        color: white;
+        padding: 30px 50px 70px 50px;
+        margin-bottom: 60px;
+    }
+
+    #plataformas h1{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #plataformas img {
+        max-width: 100%;
+    }
+
+    #plataformas ul {
+        padding-top: 10px;
+        list-style: none;
+    }
+
+
+    /*--------------- Conteudo Publisher ----------------------*/
+    #publishers {
+        margin-top: 60px;
+        color: rgb(246, 249, 250);
+        padding: 30px 50px 100px 50px;
+        background-color: rgb(31, 16, 79);
+        margin-bottom: 80px;
+        border-radius: 60px;
+    }
+
+    #publishers h1{
+        text-align: center;
+        color: rgb(243, 243, 249);
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    #publishers img {
+        max-width: 100%;
+    }
+
+    #publishers ul {
+        padding-top: 10px;
+        list-style: none;
+    }
+
+    /*--------------- Conteudo Notas ----------------------*/
+    #notas{
+        border-top: 1px solid white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+        margin-right: 150px;
+        column-gap: 200px;
+        padding-top: 50px;
+    }
+
+    #notas h1, h3{
+        text-align: center;
+    }
+
+    #notas ul{
+        list-style: none;
+    }
+
+    #notas i{
+        padding-right: 10px;
+    }
+
+    #sobre{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 20px;
+    }
+    
+
+    #editorial{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 20px;
+    }
+
+    #redes{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 20px;
+    }
+
+
+    #footer{
+        padding: 30px;
+        height: 90px;
+        background-color: rgb(31, 16, 79);
+        text-align: center;
+        color: white;
+    }
+}
+
+
+/*-------------------------------------------------------------Smartphone------------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 730px) {
+
+    #cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        min-height: 80px;
+        background-color:  rgb(31, 16, 79);
+        z-index: 999;
+    }
+
+    #cabecalho nav {
+        display: absolute;
+        width: 100%;
+        height: 0%;
+    }
+
+    #shared {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        background-color: rgba(115, 119, 208, 0.637);
+        z-index: 998;
+
+        -webkit-transition: height, 1s ease-out;
+        -moz-transition: height, 1s ease-out;
+        -o-transition: height, 1s ease-out;
+        transition: height, 1s ease-out;
+    }
+
+    #menu li {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    #menu li a {
+        display: block;
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        line-height: 60px;
+        z-index: 999;
+    }
+
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    #menuToggle:checked~label i:nth-child(2) {
+        display: block;
+    }
+
+    #menuToggle:checked~label i:first-child {
+        display: none;
+    }
+
+    #menuToggle:not(checked)~label i:first-child {
+        display: block;
+    }
+
+    #menuToggle:not(checked)~label i:nth-child(2) {
+        display: none;
+    }
+
+    #menuToggle:checked~ul {
+        height: 100%;
+    }
+
+    #cabecalho img {
+        max-width: 100%;
+        border-radius: 50px;
+    }
+
+
+    /*-------------Destaque---------*/
+    #conteudo {
+        position: relative;
+    }
+
+    #destaques {
+        padding-top: 80px;
+        background-color:  rgb(0, 0, 0);
+        padding-bottom: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    #destaques h1 {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .descricaoDestaque {
+        padding-top: 15px;
+    }
+
+
+
+
+    /*-------------Lancamento---------*/
+    #lancamentos {
+        padding-top: 20px;
+        background-color: rgb rgb(31, 16, 79);
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .descricao h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .descricao {
+        padding-bottom: 15px;
+    }
+
+    .cards_lancamento {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .cards_lancamento h4 {
+        text-align: center;
+    }
+
+    .cards_lancamento {
+        text-align: right;
+    }
+
+    #lancamentos select {
+        background-color: rgb(31, 16, 79);
+        color: rgb(255, 255, 255);
+    }
+
+
+
+    /*-------------Plataformas---------*/
+    #plataformas {
+        padding-top: 20px;
+        background-color: rgb(31, 16, 79);
+        padding-bottom: 10px;
+        color: rgb(255, 255, 255);
+        ;
+    }
+
+    #plataformas h1 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #plataformas a {
+        margin-bottom: 20px;
+    }
+
+    #plataformas img {
+        max-width: 100%;
+    }
+
+    #plataformas ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+
+
+    /*-------------Publisher---------*/
+    #publishers {
+        padding-top: 20px;
+        background-color: rgb(239, 237, 244); 
+        padding-bottom: 10px;
+        color: rgb(31, 16, 79);
+    }
+
+    #publishers h1 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #publishers a {
+        margin-bottom: 20px;
+    }
+
+    #publishers img {
+        max-width: 100%;
+    }
+
+    #publishers ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    /*-------------Sobre/Notas---------*/
+    #notas {
+        background-color: rgb(255, 255, 255);
+        color: rgb(21, 31, 54);
+        ;
+    }
+
+    #sobre h1 {
+        text-align: center;
+    }
+
+    #sobre {
+        padding: 10px 30px;
+        text-align: justify;
+    }
+
+
+    #editorial h3 {
+        text-align: center;
+    }
+
+    #editorial {
+        padding: 10px 30px;
+        text-align: center;
+    }
+
+    #editorial ul {
+        list-style: none;
+    }
+
+
+    #redes h3 {
+        text-align: center;
+    }
+
+    #redes {
+        padding: 10px 30px 20px;
+        text-align: center;
+    }
+
+    #redes ul {
+        list-style: none;
+    }
+
+    /*-------------Footer---------*/
+
+    #footer {
+        color: rgb(31, 16, 79);
+        padding: 20px 30px 10px 30px;
+        text-align: center;
+    }
+
+
+}
+
+
+/*-------------------------------------------------------------Tablet------------------------------------------------------------*/
+@media screen and (min-width: 731px) and (max-width: 1024px) {
+
+    #shared {
+        display: none;
+    }
+
+    #cabecalho {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        height: 100px;
+        padding: 20px;
+        background-color:  rgb(31, 16, 79);
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+    }
+
+    #cabecalho nav {
+        align-items: center;
+    }
+
+    #cabecalho img {
+        max-height: 80px;
+        border-radius: 50px;
+    }
+
+    #cabecalho div {
+        display: flex;
+    }
+
+    #menuToggle,
+    #sharedToggle {
+        display: none;
+    }
+
+    .menu-icon,
+    .shared-icon {
+        display: none;
+    }
+
+    #destaques {
+        margin-top: 50px;
+        background-color:  rgb(31, 16, 79);
+        padding: 50px 50px 100px 50px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+
+    #destaques h1 {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 50px;
+        color: white;
+    }
+
+    #destaques h2 {
+        padding-top: 50px;
+        color: rgb(244, 243, 242);
+    }
+
+    .descricaoDestaque p,
+    span {
+        color: white;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+
+
+
+
+    /*-------------- Conteudo Lançamentos --------------------*/
+
+    #lancamentos {
+        margin-top: 10px;
+        background-color: rgb(31, 16, 79);
+        color: white;
+        padding: 20px 50px 20px 50px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .descricao {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .cards_lancamento {
+        border: 0.09px solid rgb(31, 16, 79);
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .cards_lancamento a {
+        margin-bottom: 20px;
+    }
+
+    .cards_lancamento h4 {
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+
+
+    /*---------------- Conteudo Plataformas  -----------------*/
+
+    #plataformas {
+        margin-top: 60px;
+        color: white;
+        padding: 30px 50px 70px 50px;
+        margin-bottom: 60px;
+    }
+
+    #plataformas h1{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #plataformas img {
+        max-width: 100%;
+    }
+
+    #plataformas ul {
+        padding-top: 10px;
+        list-style: none;
+    }
+
+
+    /*--------------- Conteudo Publisher ----------------------*/
+    #publishers {
+        margin-top: 60px;
+        color: rgb(31, 16, 79);
+        padding: 30px 0px 100px 0px;
+        background-color: rgb(31, 16, 79);
+        margin-bottom: 80px;
+        border-radius: 60px;
+    }
+
+    #publishers h1{
+        text-align: center;
+        color: rgb(31, 16, 79);
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    #publishers{
+        text-align: center;
+    }
+
+    #publishers img {
+        max-width: 100%;
+    }
+
+    #publishers ul {
+        padding-top: 10px;
+        list-style: none;
+    }
+
+    #publishers a{
+        margin-bottom: 30px;
+    }
+
+    /*--------------- Conteudo Notas ----------------------*/
+    #notas{
+        border-top: 1px solid white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 80px;
+        margin-right: 80px;
+        column-gap: 10px;
+        padding-top: 50px;
+    }
+
+    #notas h1, h3{
+        text-align: center;
+    }
+
+    #notas ul{
+        list-style: none;
+    }
+
+    #notas i{
+        padding-right: 10px;
+    }
+
+    #sobre{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 20px;
+        text-align: justify;
+    }
+    
+
+    #editorial{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 20px;
+    }
+
+    #redes{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 20px;
+    }
+
+
+    #footer{
+        padding: 30px;
+        height: 90px;
+        background-color:  rgb(31, 16, 79);
+        text-align: center;
+        color: white;
+    }
+
+}
