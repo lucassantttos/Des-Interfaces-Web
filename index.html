@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f4697d820.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>CAPCOM GAMES</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+
+        <a href="index.html">
+            <img src="https://th.bing.com/th/id/R.6f3dd5c12855cfdbb8412f439bc789ea?rik=KUUeZbBrI%2bzQZw&riu=http%3a%2f%2fvgboxart.com%2fresources%2flogo%2f7158_capcom-prev.png&ehk=KSTBQs6pDiBM3E1O0Vwmk7r0dlqDWJEvvjHT0d2%2bRDI%3d&risl=&pid=ImgRaw&r=0" alt="logo">
+        </a>
+
+        <div>
+            <nav class="nav">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-rectangle-xmark"></i>
+                </label>
+
+                <ul id="menu" class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plataformas">Plataformas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#publishers">Plublisher</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="shared" class="navbar navbar-light">
+                <input type="checkbox" id="sharedToggle">
+                <label for="sharedToggle" class="shared-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+
+                <form class="form-inline">
+                    <input id="strShared" class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                        aria-label="Pesquisar">
+                    <button id="psquisa" class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="conteudo">
+
+        <section id="destaques" class="container">
+
+            <h1>Jogo Em Destaque</h1>
+
+            <div class="row">
+
+                <div id="carouselExampleControls" data-bs-touch="true" data-bs-ride="false"
+                    class="carousel slide col-sm-12 col-md-12 col-lg-8">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zX0AV6yxyrQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TRX-BmKdltY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TRX-BmKdltY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-4">
+
+                    <div class="descricaoDestaque">
+                        <h2>FIFA</h2>
+                        <p>FIFA 19 é um jogo eletrônico de futebol desenvolvido (e) publicado pela EA Sports, 
+                        que foi lançado localmente em 28 de setembro de 2018. Este é terceiro game da franquia a
+                        usar a engine de jogo da Frostbite para Xbox One, PS4 e PC. O game oferece varios modos de jogo
+                        como o modo Carreira, A Jornada e o popular Ultimate Team, sendo que o ultimo recebeu diversas novidades
+                        para a ediçao deste ano. Além dos modos de jogo, o game também tem como novidade o licenciamento da principal
+                     competiçao de clubes da europa, a UEFA Champions League...</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="lancamentos">
+
+            <div class="descricao container">
+                <div class="row">
+                    <h1 class="col-sm-12 col-md-6 col-lg-6">Games</h1>
+                    <select id="tagGenero" class="col-sm-12 col-md-3 col-lg-3">
+                        <option value=" ">All</option>
+                    </select>
+                    <select id="tagFiltro" class="col-sm-12 col-md-3 col-lg-3">
+                        <option value="Lancamento">Lançamentos</option>
+                        <option value="Avaliado">Metacritica</option>
+                        <option value="Melhores">Melhores Avaliados</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="Cards" class="cards row">
+
+                </div>
+
+        </section>
+
+
+        <section id="plataformas" class="container">
+            <div class="row">
+                <h1 class="col-sm-12 col-md-12 col-lg-12">Plataformas</h1>
+            </div>
+            <div id="plataform" class="row">
+                <article class="col-sm-12 col-md-4 col-lg-4">
+                    <h2>Xbox Game Pass</h2>
+                    <img src="imgs/xbox2.jpg" alt="">
+                    <ul>
+                        <li>Valheim</li>
+                        <li>A Plague Tale: Requiem</li>
+                        <li>Persona 5 Royal</li>
+                    </ul>
+                    <a href="https://www.xbox.com/pt-BR/xbox-game-pass/pc-game-pass" target="_blank"
+                        class="btn btn-outline-success">JOGOS</a>
+                </article>
+                <article class="col-sm-12 col-md-4 col-lg-4">
+                    <h2>PlayStation Now</h2>
+                    <img src="imgs/PlayStation-logo-1994.png" alt="">
+                    <ul>
+                        <li>Dead by Daylight</li>
+                        <li>WATCH DOGS 2</li>
+                        <li>Assassin's Creed</li>
+                    </ul>
+                    <a href="https://www.playstation.com/pt-pt/ps-plus/#subscriptions" target="_blank"
+                        class="btn btn-outline-success">ADQUIRA</a>
+                </article>
+                <article class="col-sm-12 col-md-4 col-lg-4">
+                    <h2>Nintendo Switch</h2>
+                    <img src="imgs/nitendo.jpg" alt="">
+                    <ul>
+                        <li>Pokémon Violet</li>
+                        <li>The Legend of Zelda</li>
+                        <li>Xenoblade Chronicles</li>
+                    </ul>
+                    <a href="https://ec.nintendo.com/BR/pt/membership" target="_blank"
+                        class="btn btn-outline-success">ADQUIRA</a>
+                </article>
+            </div>
+
+        </section>
+
+
+        <section id="publishers" class="container">
+
+            <div class="row">
+                <h1 class="col-sm-12 col-md-12 col-lg-12">Plublisher</h1>
+            </div>
+
+            <div id="publi" class="row">
+                <article class="card_publi col-sm-12 col-md-12 col-lg-4">
+                    <h2>Epic Games</h2>
+                    <img src="imgs/epic.jpg" alt="">
+                    <ul>
+                        <li>FINAL FANTASY VII</li>
+                        <li>Backbone</li>
+                        <li>RAILGRADE</li>
+                    </ul>
+                </article>
+                <article class="card_publi col-sm-12 col-md-12 col-lg-4">
+                    <h2>Steam Store</h2>
+                    <img src="imgs/steam-logo.png" alt="">
+                    <ul>
+                        <li>Counter-Strike: Global Offensive</li>
+                        <li>Dota 2</li>
+                        <li>Lost Ark</li>
+                    </ul>
+                </article>
+                <article class="card_publi col-sm-12 col-md-12 col-lg-4">
+                    <h2>Xbox Game Pass</h2>
+                    <img src="imgs/xbox-game-pass.jpeg" alt="">
+                    <ul>
+                        <li>Fortnite</li>
+                        <li>Fallout 4</li>
+                        <li>The Witcher 3: Wild Hunt</li>
+                    </ul>
+                </article>
+            </div>
+
+        </section>
+
+
+
+        <section id="notas">
+            <article id="sobre">
+                <h1>SOBRE</h1>
+                <p>Projeto desenvolvido na materia de Desenvolvimento de Interfaces Web do curso de Ciência da
+                    Computação - Puc Minas (2022), ultilizando as ferramentas de construção HTML5 e CSS3, além do
+                    framework Bootstrap.</p>
+            </article>
+
+            <article id="editorial">
+                <h3>EDITORIAL</h3>
+                <ul>
+                    <li>Redação: Lucas Santos</li>
+                    <li>Pesquisa: Lucas Santos</li>
+                    <li>Gerente Geral: Lucas Santos</li>
+                </ul>
+            </article>
+
+            <article id="redes">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                    <li><i class="fa-brands fa-instagram"></i></i>Instagram</li>
+                    <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+
+    <footer id="footer">
+        <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong></strong>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/index.js"></script>
+    <script src="assets/jquery-3.6.1.min.js"></script>
+
+</body>
+
+</html>
